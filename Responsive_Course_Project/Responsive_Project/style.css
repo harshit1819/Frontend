@@ -513,3 +513,17 @@ nav {
         margin-top: 15px;
     }
 }
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background-color: #111;
+        border: 1px solid #333;
+    }
+}
