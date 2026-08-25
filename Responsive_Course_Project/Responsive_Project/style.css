@@ -1,0 +1,515 @@
+@font-face {
+    font-family: manrope;
+    src: url(./Manrope-VariableFont_wght.woff2);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #050505;
+}
+
+
+body {
+    color: white;
+    font-family: manrope, sans-serif;
+}
+
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 80px;
+}
+
+
+/* LOGO */
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav1 img {
+    height: 50px;
+}
+
+
+/* CENTER NAV */
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 16px 25px;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+    background-color: #0b0b0b;
+
+    font-size: 16px;
+}
+
+.nav2 h4 {
+    font-weight: 500;
+}
+
+
+/* RIGHT NAV */
+
+.nav3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    font-size: 16px;
+}
+
+.nav3 button {
+    background-color: #111;
+    color: white;
+
+    border: 1px solid #ff641f;
+    border-radius: 25px;
+
+    padding: 10px 20px;
+
+    font-size: 15px;
+    font-family: manrope, sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE ICONS */
+
+.nav4 {
+    display: flex;
+    gap: 10px;
+}
+
+.nav4 h5 {
+    font-size: 25px;
+    display: none;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: calc(100vh - 100px);
+
+    padding: 50px 80px 80px;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px
+        );
+
+    background-size: 80px 80px;
+}
+
+
+/* ORANGE GLOW */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    background: #ff641f;
+
+    filter: blur(180px);
+
+    opacity: 0.15;
+
+    left: 10%;
+    top: 20%;
+
+    z-index: 0;
+}
+
+
+/* LEFT SIDE */
+
+.hero-left {
+    width: 50%;
+
+    padding-top: 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+.small-text {
+    color: #ff641f;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-left h1 {
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    max-width: 650px;
+}
+
+
+.description {
+    margin-top: 25px;
+
+    max-width: 570px;
+
+    color: #999;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* PRICE */
+
+.price {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.price span {
+    color: #999;
+
+    font-size: 15px;
+}
+
+.price h2 {
+    font-size: 30px;
+}
+
+.price del {
+    color: #777;
+
+    font-size: 16px;
+}
+
+.price small {
+    color: #777;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.buttons button {
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    background-color: #ff641f;
+
+    color: white;
+
+    border: none;
+}
+
+.buttons button:last-child {
+    background-color: transparent;
+
+    color: white;
+
+    border: 1px solid #555;
+}
+
+
+/* RIGHT SIDE */
+
+.hero-right {
+    width: 45%;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.hero-card {
+    width: 100%;
+
+    height: 430px;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    background-color: #181818;
+}
+
+
+/* TAGS */
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.tags span {
+    padding: 8px 14px;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 10px 30px;
+    }
+
+    .nav2 {
+        gap: 15px;
+        padding: 14px 18px;
+    }
+
+    .nav2 h4 {
+        font-size: 14px;
+    }
+
+    .nav1 img {
+        height: 45px;
+    }
+
+    .nav3 {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 40px 40px 60px;
+    }
+
+    .hero-left h1 {
+        font-size: 48px;
+    }
+
+    .hero-card {
+        height: 350px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    nav {
+        height: 80px;
+
+        padding: 10px 20px;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    .nav3 {
+        display: none;
+    }
+
+    .nav4 h5 {
+        display: block;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 50px 20px;
+    }
+
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+    }
+
+
+    .description {
+        font-size: 15px;
+    }
+
+
+    .hero-right {
+        width: 100%;
+
+        margin-top: 50px;
+    }
+
+
+    .hero-card {
+        height: 300px;
+    }
+}
+.hero-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+}
+@media (max-width: 700px) {
+
+    nav {
+        height: 80px;
+        padding: 10px 20px;
+    }
+
+    .nav2,
+    .nav3 {
+        display: none;
+    }
+
+    .nav4 h5 {
+        display: block;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 50px 20px;
+    }
+
+
+    .hero-left {
+        width: 100%;
+    }
+
+
+    .hero-left h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+
+    .description {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+
+    .price {
+        flex-wrap: wrap;
+    }
+
+
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+
+    .hero-right {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .hero-card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+
+    .hero-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .tags {
+        margin-top: 15px;
+    }
+}
